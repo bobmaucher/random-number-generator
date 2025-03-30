@@ -13,11 +13,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/1-to-100" element={<RandomNumberPage min={1} max={100} />} />
-        <Route path="/1-to-10" element={<RandomNumberPage min={1} max={10} />} />
-        <Route path="/1-to-3" element={<RandomNumberPage min={1} max={3} />} />
-        <Route path="/1-to-6" element={<RandomNumberPage min={1} max={6} />} />
-        <Route path="/1-to-1000" element={<RandomNumberPage min={1} max={1000} />} />
+        <Route path="/:range" element={<RandomNumberPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
