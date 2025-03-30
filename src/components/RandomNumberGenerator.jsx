@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function RandomNumberGenerator() {
-  const [min, setMin] = useState(min);
-  const [max, setMax] = useState(max);
+export default function RandomNumberGenerator({ min: initialMin = "", max: initialMax = "" }) {
+  const [min, setMin] = useState(initialMin);
+  const [max, setMax] = useState(initialMax);
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    setMin(initialMin);
+    setMax(initialMax);
+  }, [initialMin, initialMax]);
 
   const generate = () => {
     const minVal = parseInt(min);
