@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Random Number App",
+  "name": "Generate a random number instantly and with any range of numbers",
   "icons": [
     {
       "src": "favicon.ico",
