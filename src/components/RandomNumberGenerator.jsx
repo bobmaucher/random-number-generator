@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export default function RandomNumberGenerator() {
-  const [min, setMin] = useState(1);
-  const [max, setMax] = useState(100);
+  const [min, setMin] = useState(min);
+  const [max, setMax] = useState(max);
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
 
